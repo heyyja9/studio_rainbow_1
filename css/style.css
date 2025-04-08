@@ -34,13 +34,6 @@
     font-style: semibold;
 }
 
-@font-face{
-    font-family: 'Anybody-Italic';
-    src: url('/fonts/Anybody-Italic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
-}
-
 /* !! INDEX/HOME PAGE !! */
 
 /* NAVIGATION BAR */
@@ -224,8 +217,8 @@ a:hover, a.active{
 }
 /* styling the text link inside the button's container */
 .slogan-button a {
-    font-family: 'Anybody-Italic';
-    font-weight: normal;
+    font-family: 'Lexend-Regular';
+    font-weight: 400;
     font-size: 0.9375rem;
     color: black;
 }
