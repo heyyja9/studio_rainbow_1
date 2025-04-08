@@ -15,7 +15,7 @@
 
 @font-face{
     font-family: 'Lexend-Regular';
-    src: url('/fonts/Lexend-Regular.woff2') format('woff2');
+    src: url('studio_rainbow/fonts/Lexend-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: regular;
 }
