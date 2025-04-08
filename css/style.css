@@ -8,14 +8,14 @@
 
 @font-face{
     font-family: 'Lexend-Light';
-    src: url('/fonts/Lexend-Light.woff2') format('woff2');
+    src: url('../fonts/Lexend-Light.woff2') format('woff2');
     font-weight: 300;
     font-style: light;
 }
 
 @font-face{
     font-family: 'Lexend-Regular';
-    src: url('studio_rainbow/fonts/Lexend-Regular.woff2') format('woff2');
+    src: url('/fonts/Lexend-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: regular;
 }
