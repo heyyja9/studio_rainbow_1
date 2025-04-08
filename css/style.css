@@ -8,28 +8,28 @@
 
 @font-face{
     font-family: 'Lexend-Light';
-    src: url(/fonts/Lexend-Light.woff2);
+    src: url(/fonts/Lexend-Light.woff2) format('woff2');
     font-weight: 300;
     font-style: light;
 }
 
 @font-face{
     font-family: 'Lexend-Regular';
-    src: url(/fonts/Lexend-Regular.woff2);
+    src: url(/fonts/Lexend-Regular.woff2) format('woff2');
     font-weight: 400;
     font-style: regular;
 }
 
 @font-face{
     font-family: 'Lexend-Medium';
-    src: url(/fonts/Lexend-Medium.woff2);
+    src: url(/fonts/Lexend-Medium.woff2) format('woff2');
     font-weight: 500;
     font-style: medium;
 }
 
 @font-face{
     font-family: 'Lexend-SemiBold';
-    src: url(/fonts/Lexend-SemiBold.woff2);
+    src: url(/fonts/Lexend-SemiBold.woff2) format('woff2');
     font-weight: 600;
     font-style: semibold;
 }
