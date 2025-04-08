@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'Lexend-Light';
+    src: url(/fonts/Lexend-Light.woff2);
+    font-weight: 300;
+    font-style: light;
+}
+
+@font-face{
+    font-family: 'Lexend-Regular';
+    src: url(/fonts/Lexend-Regular.woff2);
+    font-weight: 400;
+    font-style: regular;
+}
+
+@font-face{
+    font-family: 'Lexend-Medium';
+    src: url(/fonts/Lexend-Medium.woff2);
+    font-weight: 500;
+    font-style: medium;
+}
+
+@font-face{
+    font-family: 'Lexend-SemiBold';
+    src: url(/fonts/Lexend-SemiBold.woff2);
+    font-weight: 600;
+    font-style: semibold;
+}
+
+/* NAVIGATION BAR */
+/* learned how to code responsive navigation bar from "How to Create Responsive Navigation Bar using HTML and CSS" by CodingNepal on youtube */
+nav{
+    background-color: #8ECAE6;
+    height: 80px;
+    width: 100%;
+    font-family: "Lexend-Regular";
+}
+label.logo{
+    color: black;
+    font-family: "Lexend-Medium";
+    font-weight: 500;
+    font-size: 1.5625rem;
+    line-height: 5rem;
+    padding: 0 44px;
+    margin-left: 19px;
+    white-space: nowrap;
+}
+
+/* adjusting space right of nav bar */
+nav ul{ 
+    float: right;
+    margin-right: 48px;
+}
+/* placing nav bar links in the middle, space between the links */
+nav ul li{
+    display: inline-block;
+    line-height: 5rem;
+    margin: 0 7px;
+}
+/* adjusting nav bar links */
+nav ul li a{
+    position: relative;
+    color:black;
+    font-size: 16.5px;
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+/* learned hover underline animation from "Navbar Link Underline on Hover with CSS" by ByteGrad on youtube */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform: scaleX(0); /* learned scaleX() from W3Schools' "The scaleX() Method" lesson */
+    transition: transform 0.15s ease-in-out;
+}
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+/* adusting the size of the hamburger menu icon */
+.checkbtn{
+    font-size: 23.5px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 25px;
+        padding-left: 44px;
+        padding-right: 0px;
+    }
+    nav ul li{
+        font-size: 16.5px;
+    }
+}
+/* setting when the hamburger menu appears when window shrinks - mobile screens*/
+@media (max-width: 840px){
+    .checkbtn{
+        display: block;
+    }
+    /* setting the vertical nav bar that appears after clicking burger menu icon */
+    ul{
+        position: fixed;
+        width: 48%;
+        height: 100vh;
+        background: aliceblue;
+        top: 80px;
+        right: -70%;
+        text-align: left;
+        padding-left: 15px;
+        padding-top: 15px;
+        transition: all .4s;
+    }
+    nav ul li{
+        display: block;
+        line-height: 4;
+    }
+}
+nav ul li a{
+    font-size: 16.5px;
+}
+a:hover, a.active{
+    background: none;
+}
+#check:checked ~ ul{
+    right: 0;
+    margin-right: 0px;
+}
+
+/* IMAGE 1 AND SLOGAN */
+/* learned how to align image and text using "Learn How to Align Text and Image Side by Side Using CSS For Any Device" by Codz Sword on youtube */
+.home-section-container-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* for even spacing */
+}
+
+.bracelets-pile-1 {
+    width: 38%; /* makes image size relative to container */
+    max-width: 700px;
+    height: auto; /* keeps aspect ratio */
+    margin-right: 10%; /* space between image and text */
+    margin-left: 11%;
+    margin-top: 10%;
+}
+
+.slogan {
+    width: 35%; /* allows text to take the remaining space */
+    font-family: "Lexend-SemiBold";
+    font-weight: 600; 
+    font-size: clamp(3rem, 5vw, 5rem); /* smallest size the text will become, scale based on viewport width, largest size the text can be */
+    line-height: 133%;
+    text-align: center;
+    margin-top: 7.2%;
+    margin-right: 9.5%;
+    color:#014F86;
+    white-space: normal;
+}
+
+/* making the container responsive when the window shrinks - mobile screens */
+@media (max-width: 890px) {
+    .home-section-container-1 {
+        flex-direction: column; /* stacks items vertically */
+        text-align: center;
+    }
+    
+    .bracelets-pile-1 {
+        width: 60%; /* makes image larger when it becomes mobile screen */
+        margin-bottom: 10px;
+    }
+    
+    .slogan {
+        width: 90%; /* gives text more space */
+        font-size: 5vw;
+        margin: auto;
+        margin-top: 5.5%;
+    }
+}
+
+/* START CREATING! BUTTON */
+/* styling the button's container */
+.slogan-button{
+    border-radius: 0.8125rem;
+    background: #CAF0F8;
+    width: 9.9375rem;
+    height: 2.5rem;
+    margin: auto;
+    padding: 8.6px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    
+    position: absolute;
+    left: 75%;
+    transform: translateX(-50%);
+    margin-top: 38.5%;
+}
+/* styling the text link inside the button's container */
+.slogan-button a {
+    font-family: "Lexend-Regular";
+    font-weight: 400;
+    font-size: 0.9375rem;
+    color: black;
+}
+.slogan-button:hover{
+    background: #90E0EF;
+}
+/* ensuring the button is in the middle under heading when in mobile screen */
+@media (max-width: 890px){
+    .slogan-button{
+        position: relative;
+        margin: auto;
+        margin-top: 4.3%;
+        left: auto;
+        transform: none;
+        top: auto;
+    }
+}
+
+/* IMAGE 2 AND WEBSITE OBJECTIVE */
+.home-section-container-2{
+    margin-top: 36vh; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse; /* flips the positions of the image and text */
+    border: solid 1px lightseagreen;
+}
+
+.objective-text-container {
+    position: relative;
+    top: 0; /* Keeps it from shifting up */
+    margin-top: -11%;
+    width: 43%;
+    max-width: 500px;
+    margin-left: 11%;
+    border: solid 1px red;
+    min-height: 200px;
+}
+
+.objective-heading{
+    font-family: "Lexend-Medium";
+    font-weight: 500;
+    font-size: clamp(2rem, 4vw, 2.5625rem);
+    text-align: left;
+    color:#014F86;
+    white-space: nowrap; /* have text all on one line */
+    border: solid 1px blueviolet;
+}
+
+.objective-description{
+    width: 93%; /* text box size */
+    max-width: 450px; 
+    font-family: "Lexend-Light";
+    font-weight: 300;
+    font-size: 1.06rem;
+    line-height: 1.88rem;
+    text-align: left;
+    color:black;
+    margin-top: 4.25%; /* space between heading and body text */
+    /*border: solid 1px violet;*/
+}
+
+.bracelets-pile-2{
+    width: 38%;
+    max-width: 700px;
+    height: auto;
+    margin-right: 10.5%;   
+    border: solid 1px lightcoral;
+    align-self: flex-start;
+}
+
