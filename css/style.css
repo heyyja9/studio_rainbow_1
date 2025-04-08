@@ -43,11 +43,11 @@ nav{
     background-color: #8ECAE6;
     height: 80px;
     width: 100%;
-    font-family: "Lexend-Regular";
+    font-family: 'Lexend-Regular';
 }
 label.logo{
     color: black;
-    font-family: "Lexend-Medium";
+    font-family: 'Lexend-Medium';
     font-weight: 500;
     font-size: 1.5625rem;
     line-height: 5rem;
@@ -168,7 +168,7 @@ a:hover, a.active{
 
 .slogan {
     width: 35%; /* allows text to take the remaining space */
-    font-family: "Lexend-SemiBold";
+    font-family: 'Lexend-SemiBold';
     font-weight: 600; 
     font-size: clamp(3rem, 5vw, 5rem); /* smallest size the text will become, scale based on viewport width, largest size the text can be in full screen */
     line-height: 133%;
@@ -218,7 +218,7 @@ a:hover, a.active{
 }
 /* styling the text link inside the button's container */
 .slogan-button a {
-    font-family: "Lexend-Regular";
+    font-family: 'Lexend-Regular';
     font-weight: 400;
     font-size: 0.9375rem;
     color: black;
@@ -261,7 +261,7 @@ a:hover, a.active{
 }
 
 .objective-heading{
-    font-family: "Lexend-Medium";
+    font-family: 'Lexend-Medium';
     font-weight: 500;
     font-size: clamp(1.87rem, 4vw, 2.5625rem);
     text-align: left;
@@ -274,7 +274,7 @@ a:hover, a.active{
 .objective-description{
     width: 89%; /* text box size */
     max-width: 450px; 
-    font-family: "Lexend-Light";
+    font-family: 'Lexend-Light';
     font-weight: 300;
     font-size: clamp(0.97rem, 2vw, 1.11rem); /* adjusts text size dynamically */
     line-height: clamp(1.85rem, 2.5vw, 1.95rem); /* maintains readability */
@@ -328,11 +328,11 @@ a:hover, a.active{
     line-height: 1.5rem;
 }
 .home-footer-title{
-    font-family: "Lexend-Regular";
+    font-family: 'Lexend-Regular';
     font-weight: 400;
 }
 .home-footer-credit{
-    font-family: "Lexend-Light";
+    font-family: 'Lexend-Light';
     font-weight: 300;
 }
 
@@ -360,7 +360,7 @@ a:hover, a.active{
 }
 
 .history-heading{
-    font-family: "Lexend-Medium";
+    font-family: 'Lexend-Medium';
     font-weight: 500;
     font-size: clamp(1.87rem, 4vw, 2.5625rem);
     text-align: left;
@@ -373,7 +373,7 @@ a:hover, a.active{
 .history-description{
     width: 98%; /* text box size */
     max-width: 500px; 
-    font-family: "Lexend-Light";
+    font-family: 'Lexend-Light';
     font-weight: 300;
     font-size: clamp(0.97rem, 2vw, 1.11rem); /* adjusts text size dynamically */
     line-height: clamp(1.85rem, 2.5vw, 1.95rem); /* maintains readability */
@@ -414,7 +414,7 @@ a:hover, a.active{
 }
 
 .craze-heading{
-    font-family: "Lexend-Medium";
+    font-family: 'Lexend-Medium';
     font-weight: 500;
     font-size: clamp(1.87rem, 4vw, 2.5625rem);
     text-align: left;
@@ -427,7 +427,7 @@ a:hover, a.active{
 .craze-description{
     width: 98%; /* text box size */
     max-width: 500px; 
-    font-family: "Lexend-Light";
+    font-family: 'Lexend-Light';
     font-weight: 300;
     font-size: clamp(0.97rem, 2vw, 1.11rem); /* adjusts text size dynamically */
     line-height: clamp(1.85rem, 2.5vw, 1.95rem); /* maintains readability */
@@ -459,10 +459,10 @@ a:hover, a.active{
     line-height: 1.5rem;
 }
 .about-footer-title{
-    font-family: "Lexend-Regular";
+    font-family: 'Lexend-Regular';
     font-weight: 400;
 }
 .about-footer-credit{
-    font-family: "Lexend-Light";
+    font-family: 'Lexend-Light';
     font-weight: 300;
 }

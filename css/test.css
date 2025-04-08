@@ -40,11 +40,11 @@ nav{
     background-color: #8ECAE6;
     height: 80px;
     width: 100%;
-    font-family: "Lexend-Regular";
+    font-family: 'Lexend-Regular';
 }
 label.logo{
     color: black;
-    font-family: "Lexend-Medium";
+    font-family: 'Lexend-Medium';
     font-weight: 500;
     font-size: 1.5625rem;
     line-height: 5rem;
@@ -165,7 +165,7 @@ a:hover, a.active{
 
 .slogan {
     width: 35%; /* allows text to take the remaining space */
-    font-family: "Lexend-SemiBold";
+    font-family: 'Lexend-SemiBold';
     font-weight: 600; 
     font-size: clamp(3rem, 5vw, 5rem); /* smallest size the text will become, scale based on viewport width, largest size the text can be */
     line-height: 133%;
@@ -215,7 +215,7 @@ a:hover, a.active{
 }
 /* styling the text link inside the button's container */
 .slogan-button a {
-    font-family: "Lexend-Regular";
+    font-family: 'Lexend-Regular';
     font-weight: 400;
     font-size: 0.9375rem;
     color: black;
@@ -257,7 +257,7 @@ a:hover, a.active{
 }
 
 .objective-heading{
-    font-family: "Lexend-Medium";
+    font-family: 'Lexend-Medium';
     font-weight: 500;
     font-size: clamp(2rem, 4vw, 2.5625rem);
     text-align: left;
@@ -269,7 +269,7 @@ a:hover, a.active{
 .objective-description{
     width: 93%; /* text box size */
     max-width: 450px; 
-    font-family: "Lexend-Light";
+    font-family: 'Lexend-Light';
     font-weight: 300;
     font-size: 1.06rem;
     line-height: 1.88rem;
