@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origami Bracelet Tutorial</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- got the font awesome kit link from cdnjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <!-- learned how to add custom website icon from "How to Set an Icon to Browser Tab HTML Webpage" by FineGap on youtube-->
+    <link rel="website icon" type="x-icon" href="images/bracelets-pile-1-og-icon.jpeg">
+</head>
+
+<!-- this is where i test code that i'm unsure about before putting it on my actual html files (to prevent messing up things just in case) -->
+<!-- returns to the top of the page once the "back to top" button is clicked -->
+<a id="top"></a>
+
+<body>
+    <!-- stylying mobile navigation bar (for when the window shrinks) -->
+    <nav id="navbar">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i> <!-- hamburger menu icon (learned from W3Schools' "fa fa-bars" lesson ) -->
+            <i class="fas fa-xmark"></i> <!-- x icon (learned from W3Schools' "Font Awesome Web Application Icons" page)-->
+        </label>
+
+        <!-- rest of nav bar links (for desktop window/view) -->
+        <a href="index.html" class="logo-link">
+            <label class="logo">Studio Rainbow</label>
+          </a>
+        <ul>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="about.html"> About</a></li>
+            <li><a href="gallery.html"> Gallery</a></li>
+            
+            <li>
+                <a href="#" class="active"> DIY Tutorials <i class="fa fa-caret-down"></i></a>
+                <!-- tutorial subpages for the dropdown -->
+                <ul class="dropdown">
+                    <li><a href="fishtail.html">Fishtail</a></li>
+                    <li><a href="inverted-fishtail.html">Inverted Fishtail</a></li>
+                    <li><a href="french-braid.html">French Braid</a></li>
+                    <li><a href="bicycle-track.html">Bicycle Track</a></li>
+                    <li><a href="heart-link.html">Heart Link</a></li>
+                    <li><a href="origami.html" class="active">Origami</a></li>
+                    <li><a href="three-row-frilly-braid.html">Three Row Frilly Braid</a></li>
+                    <li><a href="dragon-scale-cuff.html">Dragon Scale Cuff</a></li>
+                </ul>
+            </li>
+        </ul>           
+    </nav>
+
+    <!-- required materials and another view of finished bracelet -->
+    <div class="materials-design-container-6">
+        <div class="o6-materials-text-container">
+          <img src="images/origami/o6-materials.jpeg" class="o6-materials-pic" alt="a rainbow loom and hook, magenta, black, and dark green rubber bands, and a c-clip">
+          <h2 class="origami-bracelet">Origami Bracelet</h2>
+          <p class="materials-needed-6">Materials Needed:</p>
+
+    <!-- custom bullets -->
+          <div class="materials-list-6">
+            <p><span class="bullet-circle">●</span> Rainbow loom</p>
+            <p><span class="bullet-circle">●</span> Rainbow loom hook</p>
+            <p><span class="bullet-circle">●</span> Black rubber bands</p>
+            <p><span class="bullet-circle">●</span> Magenta rubber bands</p>
+            <p><span class="bullet-circle">●</span> Dark green rubber bands</p>
+            <p><span class="bullet-circle">●</span> C-clip</p>
+        </div>
+
+        </div>
+        <img src="images/origami/o6-full-design.jpeg" class="hl5-full-design-pic" alt="a closer overview of origami bracelet design">
+      </div>
+
+    <!-- step one instructions -->
+    <div class="o6-step-one-container">
+        <div class="o6-step-one-instructions">
+            <p class="o6-step-one">Step One</p>
+            <p class="o6-step-one-desc">Position your loom so that the red
+                 arrow points away from you. The middle column should be one 
+                 space lower than the left and right columns.
+            </p>
+        </div>
+        <img src="images/origami/o6-step-1.jpeg" class="o6-step-1-pic" alt="rainbow loom red arrow pointing up">
+    </div>
+
+    <!-- step two instructions -->
+    <div class="o6-step-two-container">
+        <div class="o6-step-two-instructions">
+            <p class="o6-step-two">Step Two</p>
+            <p class="o6-step-two-desc">Take a black rubber band and 
+                stretch it from the middle peg at the bottom of the 
+                loom to the top right peg. This will be the colour of 
+                the first chain.
+            </p>
+        </div>
+        <img src="images/origami/o6-step-2.jpeg" class="o6-step-2-pic" alt="diagonal top right black rubber band">
+    </div>
+
+    <!-- step three instructions -->
+    <div class="o6-step-three-container">
+        <div class="o6-step-three-instructions">
+            <p class="o6-step-three">Step Three</p>
+            <p class="o6-step-three-desc">Starting from the last peg 
+                where you left off, connect another black rubber band 
+                vertically to the peg in front. Repeat this step with 
+                additional black bands until you’ve connected them all the 
+                way to the top of the loom.
+            </p>
+        </div>
+        <img src="images/origami/o6-step-3-1.jpeg" class="o6-step-3-1-pic" alt="another vertical black band placed">
+        <img src="images/origami/o6-step-3-2.jpeg" class="o6-step-3-2-pic" alt="all the black bands placed on the loom">
+    </div>
+
+    <!-- step four instructions -->
+    <div class="o6-step-four-container">
+        <div class="o6-step-four-instructions">
+            <p class="o6-step-four">Step Four</p>
+            <p class="o6-step-four-desc">Starting from the bottom left peg, 
+                take a magenta rubber band and stretch it horizontally to 
+                the far right peg. Repeat this step across the rest of the 
+                loom until you reach the second-to-last row (just before the 
+                final black rubber band). Magenta will be the colour of the 
+                loops that enclose the second chain.
+            </p>
+        </div>
+        <img src="images/origami/o6-step-4-1.jpeg" class="o6-step-4-1-pic" alt="horizontal magenta band placed horizontally">
+        <img src="images/origami/o6-step-4-2.jpeg" class="o6-step-4-2-pic" alt="all the horizontal magenta bands on the loom">
+    </div>
+
+    <!-- step five instructions -->
+    <div class="o6-step-five-container">
+        <div class="o6-step-five-instructions">
+            <p class="o6-step-five">Step Five</p>
+            <p class="o6-step-five-desc">Return to the bottom of the loom again, 
+                take a dark green rubber band, and connect it vertically from 
+                the bottom middle peg to the peg in front. Continue connecting 
+                dark green bands vertically up the middle column until you reach 
+                the top. This will be the colour of the chain enclosed inside the loops.
+            </p>
+        </div>
+        <img src="images/origami/o6-step-5-1.jpeg" class="o6-step-5-1-pic" alt="first vertical dark green band">
+        <img src="images/origami/o6-step-5-2.jpeg" class="o6-step-5-2-pic" alt="almost all the vertical dark green bands on the loom">
+    </div>
+
+    <!-- step six instructions -->
+    <div class="o6-step-six-container">
+        <div class="o6-step-six-instructions">
+            <p class="o6-step-six">Step Six</p>
+            <p class="o6-step-six-desc">Once you reach the end 
+                of the loom, connect the last dark green band to the top right peg. 
+            </p>
+        </div>
+        <img src="images/origami/o6-step-6.jpeg" class="o6-step-6-pic" alt="last dark green band placed to top right diagonal">
+    </div>
+
+    <!-- step seven instructions -->
+    <div class="o6-step-seven-container">
+        <div class="o6-step-seven-instructions">
+            <p class="o6-step-seven">Step Seven</p>
+            <p class="o6-step-seven-desc">At this same top right peg, wrap 
+                a black rubber band around it twice to create a cap band. 
+                This will keep your bracelet secure, and provides a place for 
+                the C-clip to attach to later on. 
+            </p>
+        </div>
+        <img src="images/origami/o6-step-7-1.jpeg" class="o6-step-7-1-pic" alt="twisting black rubber band">
+        <img src="images/origami/o6-step-7-2.jpeg" class="o6-step-7-2-pic" alt="twisted black rubber band on the peg">
+    </div>
+
+    <!-- step eight instructions -->
+    <div class="o6-step-eight-container">
+        <div class="o6-step-eight-instructions">
+            <p class="o6-step-eight">Step Eight</p>
+            <p class="o6-step-eight-desc">Rotate your loom so the 
+                red arrow points towards you. 
+            </p>
+        </div>
+        <img src="images/origami/o6-step-8.jpeg" class="o6-step-8-pic" alt="red arrow on loom pointing down">
+    </div>
+
+    <!-- step nine instructions -->
+    <div class="o6-step-nine-container">
+        <div class="o6-step-nine-instructions">
+            <p class="o6-step-nine">Step Nine</p>
+            <p class="o6-step-nine-desc">Starting from the bottom 
+                left peg, use your hook to grab the dark green band 
+                and loop it over to the top middle peg. 
+            </p>
+        </div>
+        <img src="images/origami/o6-step-9-1.jpeg" class="o6-step-9-1-pic" alt="hooking first dark green band">
+        <img src="images/origami/o6-step-9-2.jpeg" class="o6-step-9-2-pic" alt="hooked the dark green band to the top right diagonal peg">
+    </div>
+
+    <!-- step ten instructions -->
+    <div class="o6-step-ten-container">
+        <div class="o6-step-ten-instructions">
+            <p class="o6-step-ten">Step Ten</p>
+            <p class="o6-step-ten-desc">
+                Then, at each peg from here, grab the bottom dark 
+                green band and hook it forward to the peg in front. 
+                Continue this process until you’ve reached the end of the loom.
+            </p>
+        </div>
+        <img src="images/origami/o6-step-10-1.jpeg" class="o6-step-10-1-pic" alt="hooking dark green band vertically forwards">
+        <img src="images/origami/o6-step-10-2.jpeg" class="o6-step-10-2-pic" alt="all the dark green rubber bands on the loom are hooked">
+    </div>
+
+    <!-- step eleven instructions -->
+    <div class="o6-step-eleven-container">
+        <div class="o6-step-eleven-instructions">
+            <p class="o6-step-eleven">Step Eleven</p>
+            <p class="o6-step-eleven-desc">Return to the bottom of the loom. 
+                On the right peg, use your hook to grab the horizontal magenta 
+                band and pull it over to the far left peg. Repeat this for the 
+                rest of the magenta bands across the loom.
+            </p>
+        </div>
+        <img src="images/origami/o6-step-11-1.jpeg" class="o6-step-11-1-pic" alt="magenta band brought over to the left">
+        <img src="images/origami/o6-step-11-2.jpeg" class="o6-step-11-2-pic" alt="all the magenta bands on the loom brought over to the left">
+    </div>
+
+    <!-- step twelve instructions -->
+    <div class="o6-step-twelve-container">
+        <div class="o6-step-twelve-instructions">
+            <p class="o6-step-twelve">Step Twelve</p>
+            <p class="o6-step-twelve-desc">At the bottom left peg of the loom, 
+                use your hook to grab the black band under the cap band, and 
+                connect it to the peg in front. Then, at each peg from here, 
+                grab the bottom black band, and hook it forwards to the peg in 
+                front. Make sure you pull back the magenta rubber bands first 
+                before grabbing these black bands. Continue this until you reach 
+                the end of the loom. 
+            </p>
+        </div>
+        <img src="images/origami/o6-step-12-1.jpeg" class="o6-step-12-1-pic" alt="hooking black band vertically forwards">
+        <img src="images/origami/o6-step-12-2.jpeg" class="o6-step-12-2-pic" alt="after hooking the black band forwards">
+    </div>
+
+    <!-- step thirteen instructions -->
+    <div class="o6-step-thirteen-container">
+        <div class="o6-step-thirteen-instructions">
+            <p class="o6-step-thirteen">Step Thirteen</p>
+            <p class="o6-step-thirteen-desc">When you reach the last peg 
+                of the left column, stretch the black band diagonally to the top middle peg.
+            </p>
+        </div>
+        <img src="images/origami/o6-step-13.jpeg" class="o6-step-13-pic" alt="all the black bands of the loom after being hooked">
+    </div>
+
+    <!-- step fourteen instructions -->
+    <div class="o6-step-fourteen-container">
+        <div class="o6-step-fourteen-instructions">
+            <p class="o6-step-fourteen">Step Fourteen</p>
+            <p class="o6-step-fourteen-desc">At this same top middle peg, 
+                insert your hook through all the rubber bands on the peg. 
+                Grab a dark green rubber band and pull it through all the bands, 
+                then place both ends of it onto the middle of your hook to create 
+                a secure link for later.
+            </p>
+        </div>
+        <img src="images/origami/o6-step-14-1.jpeg" class="o6-step-14-1-pic" alt="inserting hook into rubber bands">
+        <img src="images/origami/o6-step-14-2.jpeg" class="o6-step-14-2-pic" alt="dark green band wrapped around middle of hook">
+    </div>
+
+    <!-- step fifteen instructions -->
+    <div class="o6-step-fifteen-container">
+        <div class="o6-step-fifteen-instructions">
+            <p class="o6-step-fifteen">Step Fifteen</p>
+            <p class="o6-step-fifteen-desc">Carefully pull your design off the loom. 
+            </p>
+        </div>
+        <img src="images/origami/o6-step-15.jpeg" class="o6-step-15-pic" alt="pulling bracelet off loom">
+    </div>
+
+    <!-- step sixteen instructions -->
+    <div class="o6-step-sixteen-container">
+        <div class="o6-step-sixteen-instructions">
+            <p class="o6-step-sixteen">Step Sixteen</p>
+            <p class="o6-step-sixteen-desc">To create the extension, position the 
+                loom so the red arrow points towards you. Attach as many dark green 
+                bands as needed vertically, from the top peg down to the bottom peg, 
+                so the bracelet fits around your wrist.
+            </p>
+        </div>
+        <img src="images/origami/o6-step-16-1.jpeg" class="o6-step-16-1-pic" alt="red loom arrow pointing down">
+        <img src="images/origami/o6-step-16-2.jpeg" class="o6-step-16-2-pic" alt="dark green bands placed vertically down">
+    </div>
+
+    <!-- step seventeen instructions -->
+    <div class="o6-step-seventeen-container">
+        <div class="o6-step-seventeen-instructions">
+            <p class="o6-step-seventeen">Step Seventeen</p>
+            <p class="o6-step-seventeen-desc">Once all your dark green rubber 
+                bands are placed, loop the link from step 12 onto the last peg 
+                at the bottom of the loom. Then, use your hook to grab the 
+                ottom dark green band on each peg and loop it forward to the 
+                peg in front, until you reach the top of the loom.
+            </p>
+        </div>
+        <img src="images/origami/o6-step-17-1.jpeg" class="o6-step-17-1-pic" alt="design connected on the last peg of dark green bands chain">
+        <img src="images/origami/o6-step-17-2.jpeg" class="o6-step-17-2-pic" alt="after hooking forwards all dark green bands in chain">
+    </div>
+
+    <!-- step eighteen instructions -->
+    <div class="o6-step-eighteen-container">
+        <div class="o6-step-eighteen-instructions">
+            <p class="o6-step-eighteen">Step Eighteen</p>
+            <p class="o6-step-eighteen-desc">Attach a C-clip to the bands on 
+                the top peg. Once secured, carefully remove the bands from the 
+                peg and pull the extension off the loom.
+            </p>
+        </div>
+        <img src="images/origami/o6-step-18-1.jpeg" class="o6-step-18-1-pic" alt="attached c-clip to the last dark green band">
+        <img src="images/origami/o6-step-18-2.jpeg" class="o6-step-18-2-pic" alt="dark green bracelet extension with c-clip on the end">
+    </div>
+
+    <!-- step nineteen instructions -->
+    <div class="o6-step-nineteen-container">
+        <div class="o6-step-nineteen-instructions">
+            <p class="o6-step-nineteen">Step Nineteen</p>
+            <p class="o6-step-nineteen-desc">Connect the same C-clip to the 
+                cap band on the opposite side of the bracelet (the initial 
+                black cap band) to close it.
+            </p>
+        </div>
+        <img src="images/origami/o6-step-19-1.jpeg" class="o6-step-19-1-pic" alt="about to close bracelet with c-clip">
+        <img src="images/origami/o6-step-19-2.jpeg" class="o6-step-19-2-pic" alt="connected bracelet using c-clip">
+    </div>
+
+    <!-- step twenty instructions -->
+    <div class="o6-step-twenty-container">
+        <div class="o6-step-twenty-instructions">
+            <p class="o6-step-twenty">Step Twenty</p>
+            <p class="o6-step-twenty-desc">Finished! Flaunt your 
+                super cool origami bracelet!
+            </p>
+        </div>
+        <img src="images/origami/o6-step-20.jpeg" class="o6-step-20-pic" alt="finished origami bracelet on wrist">
+    </div>
+
+    <!--footer -->
+    <footer class="footer">
+        <p class="footer-title">Studio Rainbow</p>
+        <p class="footer-credit">© Designed by Janine Liang 2025</p>
+    </footer>
+      
+    <!-- back to top button -->
+    <div class="back-to-top">
+    <a href="#top" id="back-to-top">↑ back to top</a>
+    </div>
+
+     <!-- using javascript to control when the "back to top" button appears (learned from W3Schools' "How TO - Scroll Back To Top Button" lesson)-->
+    <script src="script.js"></script>
+
+</body>
+</html>

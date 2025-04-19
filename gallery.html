@@ -3,32 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studio Rainbow</title>
+    <title>Studio Rainbow - Gallery</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- got the font awesome kit link from cdnjs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <!-- learned how to add custom website icon from "How to Set an Icon to Browser Tab HTML Webpage" by FineGap on youtube-->
+    <link rel="website icon" type="x-icon" href="images/bracelets-pile-1-og-icon.jpeg">
 </head>
 
 <body>
-    <!-- website navigation bar -->
-    <nav>
-        <!-- hamburger menu icon -->
+    <!-- stylying mobile navigation bar (for when the window shrinks) -->
+    <nav id="navbar">
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars"></i> <!-- hamburger menu icon (learned from W3Schools' "fa fa-bars" lesson ) -->
+            <i class="fas fa-xmark"></i> <!-- x icon (learned from W3Schools' "Font Awesome Web Application Icons" page)-->
         </label>
 
-        <!-- rest of nav bar links -->
-        <label class="logo">Studio Rainbow</label>
+        <!-- rest of nav bar links (for desktop window/view) -->
+        <a href="index.html" class="logo-link">
+            <label class="logo">Studio Rainbow</label>
+          </a>
         <ul>
             <li><a href="index.html"> Home</a></li>
             <li><a href="about.html"> About</a></li>
-            <li><a href="gallery.html"> Gallery</a></li>
-            <li><a href="diy-tutorials.html"> DIY Tutorials</a></li>
-        </ul>        
+            <li><a href="gallery.html" class="active"> Gallery</a></li>
+            
+            <li>
+                <a href="#"> DIY Tutorials <i class="fa fa-caret-down"></i></a>
+                <!-- tutorial subpages for the dropdown -->
+                <ul class="dropdown">
+                    <li><a href="fishtail.html">Fishtail</a></li>
+                    <li><a href="inverted-fishtail.html">Inverted Fishtail</a></li>
+                    <li><a href="french-braid.html">French Braid</a></li>
+                    <li><a href="bicycle-track.html">Bicycle Track</a></li>
+                    <li><a href="heart-link.html">Heart Link</a></li>
+                    <li><a href="origami.html">Origami</a></li>
+                    <li><a href="three-row-frilly-braid.html">Three Row Frilly Braid</a></li>
+                    <li><a href="dragon-scale-cuff.html">Dragon Scale Cuff</a></li>
+                </ul>
+            </li>
+        </ul>           
     </nav>
 
-    
+    <!-- gallery introduction text -->
+    <div class="gallery-intro">
+        <h2 class="our-top-8">Our Top Bracelet Selections</h2>
+        <p class="how-to-select">Choose a bracelet by selecting its image!</p>
+    </div>
+
+    <!-- the actual gallery with all the bracelet photos -->
+    <div class="first-row">
+        <a href="fishtail.html">
+        <img src="images/gallery/fishtail.jpg" class="fishtail" alt="a light green and pink fishtail bracelet, with a difficulty rating of 2 out of 10">
+        </a>
+
+        <a href="inverted-fishtail.html">
+        <img src="images/gallery/inverted-fishtail.jpg" class="inverted-fishtail" alt="a white, magenta, and purple inverted fishtail bracelet, with a difficulty rating of 3 out of 10">
+        </a>
+
+        <a href="french-braid.html">
+        <img src="images/gallery/french-braid.jpg" class="french-braid" alt="a light orange and teal french braid bracelet, with a difficulty rating of 4 out of 10">
+        </a>
+
+        <a href="bicycle-track.html">
+        <img src="images/gallery/bicycle-track.jpg" class="bicycle-track" alt="a yellow, light blue, and light pink bicycle track bracelet, with a difficulty rating of 5 out of 10">
+        </a>
+    </div>
+
+    <div class="second-row">
+        <a href="heart-link.html">
+        <img src="images/gallery/heart-link.jpg" class="heart-link" alt="a white, pale pink, and light green heart link bracelet, with a difficulty rating of 5 out of 10">
+        </a>
+
+        <a href="origami.html">
+        <img src="images/gallery/origami.jpg" class="origami" alt="a black, dark green, and magenta origami bracelet, with a difficulty rating of 6 out of 10">
+        </a>
+
+        <a href="three-row-frilly-braid.html">
+        <img src="images/gallery/three-row-frilly-braid.jpg" class="three-row-frilly-braid" alt="a yellow, dark blue, and teal three row frilly braid bracelet, with a difficulty of 7 out of 10">
+        </a>
+
+        <a href="dragon-scale-cuff.html">
+        <img src="images/gallery/dragon-scale-cuff.jpg" class="dragon-scale-cuff" alt="a pink and light green dragon scale cuff bracelet, with a difficulty rating of 7 out of 10">
+        </a>
+    </div>
+
+    <!--footer -->
+    <footer class="footer">
+        <p class="footer-title">Studio Rainbow</p>
+        <p class="footer-credit">© Designed by Janine Liang 2025</p>
+    </footer> 
 
 </body>
 </html>

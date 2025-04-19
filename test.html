@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio Rainbow</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/test.css">
     <!-- got the font awesome kit link from cdnjs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 </head>
 
 <body>
+    <!-- website navigation bar -->
     <nav>
         <!-- hamburger menu icon -->
         <input type="checkbox" id="check">
@@ -17,36 +18,115 @@
             <i class="fas fa-bars"></i>
         </label>
 
-        <!-- rest of nav bar -->
-        <label class="logo">Studio Rainbow</label>
+        <!-- rest of nav bar links -->
+        <a href="index.html" class="logo-link">
+            <label class="logo">Studio Rainbow</label>
+          </a>
         <ul>
-            <li><a href="#"> Home</a></li>
-            <li><a href="#"> About</a></li>
-            <li><a href="#"> Gallery</a></li>
-            <li><a href="#"> DIY Tutorials</a></li>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="about.html"> About</a></li>
+            <li><a href="gallery.html"> Gallery</a></li>
+
+            <li>
+                <a href="#"> DIY Tutorials <i class="fa fa-caret-down"></i></a>
+                <!-- tutorial subpages for the dropdown -->
+                <ul class="dropdown">
+                    <li><a href="fishtail.html">Fishtail</a></li>
+                    <li><a href="inverted-fishtail.html">Three Row Frilly Braid</a></li>
+                    <li><a href="french-braid.html">French Braid</a></li>
+                    <li><a href="french-braid.html">Dragon Scale Cuff</a></li>
+                </ul>
+            </li>
         </ul>        
     </nav>
-    
-    <!-- slogan section - image, slogan, button -->
-    <div class="home-section-container-1">
-        <img src="images/bracelets-pile-1-copy.jpg" class="bracelets-pile-1">
-        <h1 class="slogan">your guide to colourful creations.</h1>
-        <div class="slogan-button">
-            <a href="gallery.html">start creating!</a>
+
+    <div class="about-section-container-1">
+        <figure>
+            <img src="images/cheong-and-fen.jpeg" class="cheong-and-fen">
+            <figcaption class="history-caption">Cheong Choon Ng, creator of Rainbow Loom, 
+                tossing colorful rubber band packs beside his wife, Tyng Fen Chan. 
+                Image source: <a href="https://www.usatoday.com/story/money/business/2014/03/25/rainbow-loom-sensation-michigan-company/6859443/" 
+                class="history-image-link" target="_blank">Rainbow Loom toy sensation starts in Mich. living room</a>
+            </figcaption>
+          </figure>
+        <div class="brand-history-text-container">
+            <h2 class="history-heading">Brand History</h2>
+            <p class="history-description">
+                The idea for Rainbow Loom was conceived in 2010 by Cheong Choon Ng, 
+                a Malaysian immigrant and mechanical engineer working for Nissan. 
+                Inspired by his daughters, Teresa and Michelle, making rubber band 
+                bracelets, and hindered by his larger fingers, Ng built a wooden 
+                push-pin board to improve his dexterity. Although the initial, 
+                bulkier design didn't win his daughters over, he refined it by 
+                adding more rows of push pins, eventually capturing their interest. <br><br>
+
+                Teresa, his oldest daughter, later suggested he manufacture and sell 
+                the loom, and his brother Cheong Yeow Ng encouraged him to market it 
+                online. Leveraging his background in product design, quality control, 
+                and manufacturing, Ng and his family invested $10 000 in Chinese 
+                manufacturers, dividing $5000 for molding the template, and $5000 
+                for the kit's parts. In the summer of 2011, a 2000 pound shipment 
+                of rubber bands arrived, and Ng began assembling the kits at night 
+                after work, while his wife, Tyng Fen Chan, worked on them during the day. <br><br>
+
+                After early sales were hampered by customer confusion over the 
+                innovative toy, Ng and his daughters began posting instructional 
+                YouTube videos to educate potential buyers. These videos proved 
+                pivotal, as in summer 2012, a Learning Express Toys store (a chain 
+                of 130 franchises) ordered 24 looms, and called to reorder just two 
+                days later. Soon, other locations rushed to stock up, and by summer 
+                2013, Rainbow Loom was listed as one of the chain's top toys. <br><br>
+
+                As of August 2013, Ng manages a team of 12 from a 7500-square-foot 
+                warehouse near his home, handling distribution while manufacturing 
+                occurs in China. In all, Rainbow Loom is carried by 600 retailers, 
+                with sales exceeding just over one million units at retail prices 
+                between $15 and $17. <br><br>
+            </p>
+            <p class="history-source">
+                Source: <a href="https://www.nytimes.com/2013/09/01/business/rainbow-looms-success-from-2000-pounds-of-rubber-bands.html" class="nyt-link">The New York Times</a>
+            </p>
         </div>
     </div>
 
-    <!-- objective section - image, objective heading and description -->
-    <div class="home-section-container-2">
-        <img src="images/bracelets-pile-2-copy.jpg" class="bracelets-pile-2">
-            <h2 class="objective-heading">Our Objective</h2>
-            <p class="objective-description">
-                Studio Rainbow is your go-to space for all things Rainbow Loom bracelets! Whether you're just looking to unwind, get creative, or simply try something new, this is the perfect place for you. 
-                With a wide variety of easy-to-follow tutorials, our goal is to make bracelet-making fun and accessible for everyone.
+    <div class="about-section-container-2">
+        <img src="images/bracelets-on-arms.jpg" class="bracelets-arms">
+        <div class="bracelets-craze-text-container">
+            <h2 class="craze-heading">The Bracelet Craze</h2>
+            <p class="craze-description">
+                The owner of a Learning Express Toys in Chattanooga, Mary Beth 
+                Conklin, states that Rainbow Loom's popularity has exceeded 
+                that of past hits like Webkinz and Silly Bandz. <br><br>
+
+                Conklin, whose store began selling Rainbow Loom kits in October 
+                2012, shares that “Rainbow Loom far exceeds those trends. 
+                We've been in business five years and we've never carried 
+                anything as popular.” She believes that the product has 
+                become a social phenomenon because “kids love trading the 
+                bracelets. [...] [They] find great satisfaction in being 
+                challenged by the endless number of designs they can make.” 
+                She goes on to explain how parents have even hopped on the trend 
+                as “it's educational and enhances fine motor skills, [...]  
+                [and] gets kids off the iPads, iTouches, and all things electronic.” <br><br>
+
+                Similarly, Jeff Underwood, a district manager for the crafts store 
+                Michaels, mentions that the Rainbow Loom kits have been highly 
+                popular at their locations. He says, “The first day that we 
+                introduced the Rainbow Loom, we had more than 20 Michaels 
+                sold out immediately.” 
+
             </p>
+        </div>
     </div>
+
     
+
+
+    <!-- about page footer -->
+    <footer class="about-footer">
+        <p class="about-footer-title">Studio Rainbow</p>
+        <p class="about-footer-credit">© Designed by Janine Liang 2025</p>
+    </footer>
 
 </body>
 </html>
-

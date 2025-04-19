@@ -3,35 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studio Rainbow</title>
+    <title>Studio Rainbow - Home</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- got the font awesome kit link from cdnjs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
-
+    <!-- learned how to add custom website icon from "How to Set an Icon to Browser Tab HTML Webpage" by FineGap on youtube-->
+    <link rel="website icon" type="x-icon" href="images/bracelets-pile-1-og-icon.jpeg">
 </head>
 
 <body>
-    <!-- website navigation bar -->
-    <nav>
-        <!-- hamburger menu icon -->
+    <!-- stylying mobile navigation bar (for when the window shrinks) -->
+    <nav id="navbar">
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars"></i> <!-- hamburger menu icon (learned from W3Schools' "fa fa-bars" lesson ) -->
+            <i class="fas fa-xmark"></i> <!-- x icon (learned from W3Schools' "Font Awesome Web Application Icons" page)-->
         </label>
 
-        <!-- rest of nav bar links -->
-        <label class="logo">Studio Rainbow</label>
+        <!-- rest of nav bar links (for desktop window/view) -->
+        <a href="index.html" class="logo-link">
+            <label class="logo">Studio Rainbow</label>
+          </a>
         <ul>
-            <li><a href="index.html"> Home</a></li>
+            <li><a href="index.html" class="active"> Home</a></li>
             <li><a href="about.html"> About</a></li>
             <li><a href="gallery.html"> Gallery</a></li>
-            <li><a href="diy-tutorials.html"> DIY Tutorials</a></li>
-        </ul>        
+            
+            <li>
+                <a href="#"> DIY Tutorials <i class="fa fa-caret-down"></i></a>
+                <!-- tutorial subpages for the dropdown -->
+                <ul class="dropdown">
+                    <li><a href="fishtail.html">Fishtail</a></li>
+                    <li><a href="inverted-fishtail.html">Inverted Fishtail</a></li>
+                    <li><a href="french-braid.html">French Braid</a></li>
+                    <li><a href="bicycle-track.html">Bicycle Track</a></li>
+                    <li><a href="heart-link.html">Heart Link</a></li>
+                    <li><a href="origami.html">Origami</a></li>
+                    <li><a href="three-row-frilly-braid.html">Three Row Frilly Braid</a></li>
+                    <li><a href="dragon-scale-cuff.html">Dragon Scale Cuff</a></li>
+                </ul>
+            </li>
+        </ul>           
     </nav>
     
     <!-- slogan section - image, slogan, button -->
     <div class="home-section-container-1">
-        <img src="images/bracelets-pile-1-copy.jpg" class="bracelets-pile-1">
+        <img src="images/bracelet-pile-1.jpeg" class="bracelets-pile-1" alt="a pile of numerous colourful rainbow loom bracelets">
         <h1 class="slogan">your guide to colourful creations.</h1>
         <div class="slogan-button">
             <a href="gallery.html">start creating!</a>
@@ -40,7 +57,7 @@
 
     <!-- objective section - image, objective heading and description -->
     <div class="home-section-container-2">
-        <img src="images/bracelets-pile-2-copy.jpg" class="bracelets-pile-2">
+        <img src="images/bracelet-pile-2.jpeg" class="bracelets-pile-2" alt="another pile of a few colourful rainbow loom bracelets">
         <div class="objective-text-container">
             <h2 class="objective-heading">Our Objective</h2>
             <p class="objective-description">
@@ -50,10 +67,10 @@
         </div>
     </div>
     
-    <!-- home page footer -->
-    <footer class="home-footer">
-        <p class="home-footer-title">Studio Rainbow</p>
-        <p class="home-footer-credit">© Designed by Janine Liang 2025</p>
+    <!--footer -->
+    <footer class="footer">
+        <p class="footer-title">Studio Rainbow</p>
+        <p class="footer-credit">© Designed by Janine Liang 2025</p>
     </footer>
 
 </body>
