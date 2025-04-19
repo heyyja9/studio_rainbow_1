@@ -120,13 +120,13 @@ nav ul li a.active::after {
     right: -37px;
     background-color: #8ECAE6;
     width: 190px;
-    height: 510px;
+    height: 455px;
     z-index: 12;
 }
 
 .dropdown li {
     display: block; /* make subpages stack vertically */
-    margin-bottom: -20px; /* spaces in between the subpages */
+    margin-bottom: -15%; /* spaces in between the subpages */
 }
 
 /* dropdown links appearance */
@@ -162,10 +162,10 @@ nav ul li:hover .dropdown {
         background-color: aliceblue;
         display: none; /* hidden by default */
         width: 221.5px;
-        height: 494px;
+        height: 490px;
         z-index: 10;
         left: 0;
-        top: 30%;
+        top: 264px;
     }
 
     /* dropdown is displayed when DIY Tutorial is hovered over */
@@ -177,7 +177,7 @@ nav ul li:hover .dropdown {
     /* stacking dropdown pages vertically */
     .dropdown li {
         display: block;
-        margin-bottom: -10px; /* spacing between the subpages */
+        margin-bottom: -8%; /* spacing between the subpages */
     }
 
     /* dropdown links appearance */
@@ -187,7 +187,7 @@ nav ul li:hover .dropdown {
         text-decoration: none;
         text-align: left;
         white-space: nowrap;
-        line-height: 1.5;
+        line-height: 1rem;
     }
 
     /* adjusting the dropdown arrow, making it the same as the horizontal nav bar version */
